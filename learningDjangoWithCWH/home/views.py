@@ -3,8 +3,8 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 def index(request):
   context = {
-    "variable1": "Python is Great",
-    "variable2": "Javascript is also Great"
+    "variable1": "Python",
+    "variable2": "JavaScript"
   }
   return render(request, "index.html", context)
   # return HttpResponse("Hello, this is my first django project")
