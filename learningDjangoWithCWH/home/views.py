@@ -10,10 +10,13 @@ def index(request):
   # return HttpResponse("Hello, this is my first django project")
 
 def about(request):
-  return HttpResponse("Hello, this is About page")
+    return render(request, 'about.html')
+  # return HttpResponse("Hello, this is About page")
 
 def services(request):
-  return HttpResponse("Hello, this is Services page")
+  return render(request, 'services.html')
+  # return HttpResponse("Hello, this is Services page")
 
 def contact(request):
-  return HttpResponse("Hello, this is Contact page")
+  return render(request, 'contact.html')
+  # return HttpResponse("Hello, this is Contact page")
