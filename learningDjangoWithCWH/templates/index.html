@@ -3,5 +3,45 @@
 Home | 
 {% endblock title %}
 {% block body %} 
-This is the home page block 
+ <div class="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active " >
+        <img src="https://source.unsplash.com/random/1920x820/?computer,coding" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-light" style="z-index: 10">Full Stack Developer</h1>
+          <p>Create awesome websites and complex applications for your business.</p>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <img src="https://source.unsplash.com/random/1920x820/?laptop,coding" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-light" style="z-index: 10">Smart Contracts Developer</h1>
+          <p>Create Ethereum blockchain/smart contracts using Solidity and Web3.0 apps.</p>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <img src="https://source.unsplash.com/random/1920x820/?smartphone,coding" class="d-block w-100" alt="..." style="z-index: -1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-light" style="z-index: 10">Mobile Application Developer</h1>
+          <p>Create cross platform(Android/iOS) for your business using React Native.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+ </div>
 {% endblock body %}
